@@ -1,0 +1,645 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Poppins:700|Outfit:700");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --black: #000000;
+  --font-size-xxxs: 20px;
+  --font-size-m: 68px;
+  --font-size-s: 31px;
+  --font-size-xxs: 26px;
+  --font-size-xs: 27px;
+  --font-family-poppins: "Poppins", Helvetica;
+  --font-family-outfit: "Outfit", Helvetica;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.hidden,
+.hidden * {
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.page {
+  align-items: center;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+  height: auto;
+  min-width: 1440px;
+  padding: 50px 30px;
+  position: relative;
+}
+
+.hero-section {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  padding: 40px 0px;
+  position: relative;
+  width: 1179px;
+}
+
+.hero-image {
+  align-self: stretch;
+  flex: 1;
+  flex-grow: 1;
+  position: relative;
+  margin-top: 10px;
+}
+
+.headline {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 5px;
+  padding: 10px 0px;
+  position: relative;
+}
+
+.medium-length-display {
+  align-self: stretch;
+  letter-spacing: 0;
+  line-height: 85px;
+  margin-top: -1px;
+  position: relative;
+}
+
+.outfit-bold-black-68px {
+  color: var(--black);
+  font-family: var(--font-family-outfit);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.discover-open-source {
+  color: var(--black);
+  font-family: var(--font-family-outfit);
+  font-size: var(--font-size-xxs);
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 27.5px;
+  position: relative;
+  width: fit-content;
+}
+
+.nav-section {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  position: relative;
+  width: 1181px;
+}
+
+.search-bar-wrapper {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 15px;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  max-width: 1200px; /* Adjust the max width if needed */
+}
+
+.search-button-container {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 20px;
+  position: relative;
+}
+
+.search-button-container-item {
+  cursor: pointer;
+  height: 43px;
+  position: relative;
+  background-color: #000000;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  width: 170px;
+}
+
+.search-button-container-item:hover {
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.text-inside-button {
+  color: #ffffff;
+  padding: 5px;
+  font-weight: bold;
+  font-family: var(--font-family-outfit);
+}
+
+.omf-logo {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  position: relative;
+}
+
+.image-11 {
+  height: 96px;
+  object-fit: cover;
+  position: relative;
+  width: 88px;
+}
+
+.searchbox {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  gap: 10px;
+  position: relative;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+input:focus {
+  outline: none;
+}
+
+.searchbox-input {
+  background-color: transparent;
+  border: 0;
+  color: var(--black);
+  flex: 1;
+  flex-grow: 1;
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-xxxs);
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 27.5px;
+  margin-top: -1px;
+  padding: 0;
+  position: relative;
+}
+
+.searchbox-input::placeholder {
+  color: #00000099;
+}
+
+.navbar-wrapper {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 38px;
+  justify-content: center;
+  position: relative;
+  width: 1181px;
+}
+
+.landing-page .sdt {
+  gap: 10px;
+  position: relative;
+}
+
+.sdt-logo {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+}
+
+.image-12 {
+  height: 83px;
+  position: relative;
+  width: 300px;
+}
+
+.navbar {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  gap: 38px;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.navbar-link {
+  letter-spacing: 0;
+  line-height: 27.5px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.poppins-bold-black-20px {
+  color: var(--black);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-xxxs);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.support-section {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: -12.48px;
+  position: relative;
+  width: 1179px;
+}
+
+.supported-for {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.supported-text {
+  color: var(--black);
+  font-family: var(--font-family-outfit);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 27.5px;
+  margin-top: -1px;
+  margin-bottom: 10px;
+  position: relative;
+  width: 1179px;
+}
+
+.os-logos {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  height: 136px;
+  position: relative;
+  width: 1179px;
+}
+
+.open-suse_-logo-1 {
+  align-self: center;
+  flex: 1;
+  flex-grow: 1;
+  position: relative;
+}
+
+.red_-hat_logo-1 {
+  align-self: center;
+  flex: 1;
+  flex-grow: 1;
+  position: relative;
+}
+
+.ibm-z_os-1 {
+  align-self: center;
+  flex: 1;
+  flex-grow: 1;
+  object-fit: cover;
+  position: relative;
+}
+
+.alma-linux_-icon_-logo-1 {
+  align-self: center;
+  flex: 1;
+  flex-grow: 1;
+  position: relative;
+}
+
+.logo-1 {
+  align-self: center;
+  flex: 1;
+  flex-grow: 1;
+  position: relative;
+}
+
+.x267px-fedora_logo-1 {
+  align-self: center;
+  flex: 1;
+  flex-grow: 1;
+  position: relative;
+}
+
+.rocky_-linux_logo-1 {
+  align-self: center;
+  flex: 1;
+  flex-grow: 1;
+  position: relative;
+}
+
+.debian_logo-1 {
+  align-self: center;
+  flex: 1;
+  flex-grow: 1;
+  position: relative;
+}
+
+.ubuntu-logo-2022-1 {
+  align-self: center;
+  flex: 1;
+  flex-grow: 1;
+  position: relative;
+}
+
+.middle-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  height: 567.48px;
+  justify-content: center;
+  margin: 12px;
+  position: relative;
+}
+
+.upper-section {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  gap: 10px;
+  height: 36px;
+  justify-content: center;
+  position: relative;
+}
+
+.search-results {
+  background-color: #ffffff;
+  border-radius: 10px;
+  max-height: 400px;
+  overflow-y: auto;
+  position: relative;
+  width: 100%;
+  padding: 10px;
+}
+
+.search-result-item {
+  align-items: center;
+  display: flex;
+  padding: 10px;
+  position: relative;
+  border-bottom: 1px solid #ddd;
+}
+
+.search-result-item:hover {
+  background-color: #f0f0f0;
+}
+
+.search-list-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Ensure it takes full width */
+  max-width: 1200px; /* Adjust the max width if needed */
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  margin-top: 20px; /* Add some space below the search bar */
+  overflow-y: auto;
+  padding: 0 15px; /* Add some padding for better layout */
+}
+
+.search-list {
+  display: flex;
+  width: 100%; /* Ensure it takes full width */
+  align-items: center;
+  padding: 25px;
+  position: relative;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-color: #a89f9f;
+}
+
+.result-name {
+  color: var(--black);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-xxxs);
+  font-weight: 700;
+  line-height: 27.5px;
+  position: relative;
+}
+
+.result-description {
+  color: var(--black);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-xxxs);
+  font-weight: 400;
+  line-height: 27.5px;
+  position: relative;
+}
+
+
+
+
+
+
+.search-list-container {
+  padding: 10px;
+}
+
+.search-list {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.version-tags {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.version-tag {
+  background-color: #044FC0;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.content {
+  padding-right: 120px; /* Adjust this based on the width of the version tags */
+}
+
+.name {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.description {
+  margin-top: 5px;
+  font-size: 14px;
+  margin: 0;
+}
+.results-count {
+  color: #333; /* Dark grey color */
+  font-size: 28px;
+  margin-top: 10px;
+  margin-bottom: 2px;
+  text-align: left;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.page-item {
+  margin: 0 5px;
+}
+
+.page-link {
+  display: inline-block;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #333;
+  text-decoration: none;
+}
+
+.page-link:hover {
+  background-color: #f0f0f0;
+}
+
+.active .page-link {
+  background-color: #044FC0;
+  color: white;
+  border-color: #044FC0;
+}
+
+/* App.css */
+
+/* Container for the entire search result list */
+.search-results-container {
+  padding: 20px;
+}
+
+/* Container for individual search result items */
+.search-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Adds space between each search result */
+}
+
+/* Individual search result item */
+.search-list {
+  position: relative;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 60px; /* Ensures the box maintains a minimum height */
+}
+
+/* Container for version tags positioned at the top-right corner */
+.version-tags {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px; /* Adds space between version tags */
+}
+
+/* Individual version tag style */
+.version-tag {
+  background-color: #044fc0;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+/* Container for the name and description of the package */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligns the content to the left */
+  max-width: calc(100% - 120px); /* Ensures content does not overlap with version tags */
+}
+
+/* Style for package name */
+.name {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Style for package description */
+.description {
+  font-size: 14px;
+  color: #666;
+  max-width: 100%;
+  word-wrap: break-word; /* Ensures text wraps within the container */
+}
+
+/* Style for pagination wrapper */
+.pagination-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+/* Style for pagination container */
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+/* Style for each page item */
+.page-item {
+  margin: 0 5px;
+}
+
+/* Style for each page link */
+.page-link {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #044fc0;
+}
+
+/* Style for active page */
+.active .page-link {
+  background-color: #044fc0;
+  color: white;
+  border-color: #044fc0;
+}
+
+/* Style for previous and next buttons */
+.page-item.previous,
+.page-item.next {
+  display: none; /* Hide by default, shown conditionally in JS */
+}
