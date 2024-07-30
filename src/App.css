@@ -99,7 +99,7 @@ body::-webkit-scrollbar {
   width: fit-content;
 }
 
-.nav-section {
+/* .nav-section {
   align-items: center;
   display: flex;
   flex: 0 0 auto;
@@ -107,8 +107,8 @@ body::-webkit-scrollbar {
   gap: 20px;
   justify-content: center;
   position: relative;
-  width: 1181px;
-}
+  width: 1181px; */
+/* } */
 
 .search-bar-wrapper {
   align-items: center;
@@ -201,7 +201,7 @@ input:focus {
   color: #00000099;
 }
 
-.navbar-wrapper {
+/* .navbar-wrapper {
   align-items: center;
   display: flex;
   flex: 0 0 auto;
@@ -209,7 +209,7 @@ input:focus {
   justify-content: center;
   position: relative;
   width: 1181px;
-}
+} */
 
 .landing-page .sdt {
   gap: 10px;
@@ -229,7 +229,7 @@ input:focus {
   width: 300px;
 }
 
-.navbar {
+/* .navbar {
   align-items: center;
   align-self: stretch;
   display: flex;
@@ -245,8 +245,8 @@ input:focus {
   line-height: 27.5px;
   position: relative;
   white-space: nowrap;
-  width: fit-content;
-}
+  width: fit-content; */
+/* } */
 
 .poppins-bold-black-20px {
   color: var(--black);
